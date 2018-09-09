@@ -1,20 +1,30 @@
 
 <div class="header">
-  <h2 class="title">John's Work</h2>
+  <h3 class="title">John's Works</h3>
 </div>
 
 <div class="works">
-  <
   <section class="websites">
-    <div class="work">www.bestfoodfeed.com</div>
-    <div class="work">contributors.bestfoodfeed.com</div>
-    <div class="work">partners.bestfoodfeed.com</div>
+    <div class="title item">Websites</div>
+    {{#link-to 'work' 'www.bestfoodfeed.com'}}
+      <div class="work item">www.bestfoodfeed.com</div>
+    {{/link-to}}
+    {{#link-to 'work' 'contributors.bestfoodfeed.com'}}
+      <div class="work item">contributors.bestfoodfeed.com</div>
+    {{/link-to}}
+    {{#link-to 'work' 'partners.bestfoodfeed.com'}}
+      <div class="work item">partners.bestfoodfeed.com</div>
+    {{/link-to}}
+    {{#link-to 'work' 'treasurechestfoods.com'}}
+      <div class="work item">treasurechestfoods.com</div>
+    {{/link-to}}
   </section>
   <section class="ios">
-    <div class="work">BestFoodFeed</div>
-    <div class="work">MyFab5</div>
-    <div class="work">BestFoodClub</div>
-    <div class="work">BestFoodMarketer</div>
-    <div class="work">SeatSideService</div>
+    <div class="title item">iOS Applications</div>
+    <div class="work item">BestFoodFeed</div>
+    <div class="work item">MyFab5</div>
+    <div class="work item">BestFoodClub</div>
+    <div class="work item">BestFoodMarketer</div>
+    <div class="work item">SeatSideService</div>
   </section>
 </div>

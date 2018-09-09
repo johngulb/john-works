@@ -1,20 +1,8 @@
 .work-page {
 
-  background-color: #eee;
+  background-color: #bbb;
   padding: 80px;
   height: 100%;
-
-  .iframe-container {
-  }
-
-  .iframe-wrapper {
-    box-shadow: 0 0 6px 2px #ccc;
-  }
-
-  iframe {
-    width: 100%;
-    height: 80vh;
-    border: none;
-  }
+  min-width: 500px;
 
 }

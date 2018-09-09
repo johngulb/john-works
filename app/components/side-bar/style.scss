@@ -2,21 +2,41 @@
 
   box-shadow: 8px 0 8px -10px #000;
   background-color: #2196f3;
+  padding: 2rem 0;
 
   h1, h2, h3, p, div {
     color: white;
   }
 
   .header {
-    padding: 1em;
+    padding: 1rem;
+    text-align: center;
   }
 
   .works {
 
   }
 
+  section .title {
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-top: 2em;
+    color: #ddd;
+  }
+
   .work {
-    padding: 0.6em 1.3em;
+    &:hover {
+      background-color: #56a5e4;
+    }
+  }
+
+  a {
+    width: 100%;
+    color: white;
+  }
+
+  .item {
+    padding: 0.6rem 1.3rem;
   }
 
 }
