@@ -8,5 +8,7 @@ Router = Ember.Router.extend
 Router.map ->
 
   @route 'resume'
+  @route 'work',
+    path: ':work'
 
 export default Router

@@ -1,8 +1,5 @@
 import Ember from 'ember'
 
-IndexRoute = Ember.Route.extend
-
-  redirect: ->
-    @transitionTo 'resume'
+IndexRoute = Ember.Route.extend()
 
 export default IndexRoute

@@ -1,3 +1,16 @@
 .application-page {
-
+  .side-bar {
+    width: 300px;
+    height: 100vh;
+    position: absolute;
+    z-index: 10;
+  }
+  .application-outlet {
+    margin-left: 300px;
+    position: fixed;
+    width: calc(100% - 300px);
+    overflow-y: scroll;
+    bottom: 0;
+    top: 0;
+  }
 }
