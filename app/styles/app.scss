@@ -3,3 +3,11 @@
 
 @import 'routes';
 @import 'components';
+
+// Custom styles
+@import 'custom/ember-paper';
+@import 'custom/ember-paper-stepper';
+@import 'custom/buttons';
+@import 'custom/input';
+@import 'custom/layout';
+@import 'custom/simditor';

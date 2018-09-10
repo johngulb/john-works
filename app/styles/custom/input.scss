@@ -1,0 +1,64 @@
+
+md-input-container
+{
+
+  // margin: 10px 0px;
+  margin: 15px 0px 5px 0px;
+  padding: 2px 0px;
+
+  .md-input
+  {
+    font-size: 16px;
+    margin-bottom: 5px;
+    box-shadow: none;
+    width: calc(100% - 5px)
+  }
+
+  .md-errors-spacer
+  {
+    min-height: 20px;
+  }
+
+}
+
+md-input-container {
+  width: 100%;
+  .md-input:focus {
+    box-shadow: none;
+  }
+}
+
+.md-autocomplete-suggestions
+{
+	li
+	{
+		padding: 0 8px;
+		background-color: white;
+		.material-icons
+		{
+			padding: 0px 4px;
+		}
+    .search-icon
+    {
+      padding: 10px;
+      font-size: 20px;
+      color: #757575;
+      font-weight: bold;
+    }
+		.result-text
+		{
+			margin-left: 8px;
+		}
+		.location.summary-view
+		{
+			.material-icons
+			{
+				margin-top: 12px;
+			}
+      .names
+      {
+        margin-top: 3px;
+      }
+		}
+	}
+}

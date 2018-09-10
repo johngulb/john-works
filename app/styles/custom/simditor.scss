@@ -1,0 +1,21 @@
+.simditor
+{
+  border: none;
+  .simditor-wrapper
+  {
+    .simditor-toolbar
+    {
+      background: #eee;
+      z-index: 0;
+    }
+    .simditor-body
+    {
+      min-height: 100px;
+      padding: 8px 0px;
+    }
+    .simditor-placeholder
+    {
+      padding: 8px 0px;
+    }
+  }
+}

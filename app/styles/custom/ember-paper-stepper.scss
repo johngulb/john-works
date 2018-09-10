@@ -1,0 +1,11 @@
+button.md-stepper-indicator {
+  background-color: transparent;
+  color: #aaa;
+   &:hover {
+     background-color: transparent;
+   }
+}
+
+md-step-actions {
+  text-align: right;
+}

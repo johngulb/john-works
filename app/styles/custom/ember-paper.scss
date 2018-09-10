@@ -1,0 +1,32 @@
+md-dialog {
+
+  padding: 12px;
+  @media #{$small-only}
+  {
+    min-width: auto;
+  }
+
+  &.large {
+    width: 1000px;
+  }
+
+  &.medium {
+    width: 600px;
+  }
+
+  &.small {
+    width: 400px;
+  }
+
+  &.x-small {
+    width: 200px;
+  }
+
+  .header {
+    .title {
+      padding: 12px;
+      font-size: 24px;
+    }
+  }
+
+}

@@ -1,0 +1,64 @@
+.md-button.padding
+{
+  padding: 0px 15px;
+}
+
+.md-button.md-default-theme.md-raised.cancel, .md-button.cancel
+{
+  background-color: color($color-red, "700");
+  font-weight: bolder;
+  color: white;
+}
+
+.md-button.md-default-theme.cancel:not([disabled]):hover, .md-button.md-default-theme.md-raised.cancel:not([disabled]):hover, .md-button.cancel:not([disabled]):hover
+{
+  background-color: color($color-red, "500");
+}
+
+.md-button.md-raised.edit, .md-button.edit
+{
+  background-color: color($color-blue-grey, "400");
+  font-weight: bolder;
+  color: white;
+}
+
+.md-button.md-default-theme.edit:not([disabled]):hover, .md-button.md-default-theme.md-raised.edit:not([disabled]):hover, .md-button.edit:not([disabled]):hover
+{
+  background-color: color($color-blue-grey, "300");
+}
+
+.md-button.md-raised.save, .md-button.save
+{
+  background-color: color($color-teal, "500");
+  font-weight: bolder;
+  color: white;
+}
+
+.md-button.md-default-theme.save:not([disabled]):hover, .md-button.md-default-theme.md-raised.save:not([disabled]):hover, .md-button.save:not([disabled]):hover
+{
+  background-color: color($color-teal, "300");
+}
+
+.md-button.md-raised.publish, .md-button.publish
+{
+  background-color: color($color-blue, "800");
+  font-weight: bolder;
+  color: white;
+}
+
+.md-button.md-default-theme.publish:not([disabled]):hover, .md-button.md-default-theme.md-raised.publish:not([disabled]):hover, .md-button.publish:not([disabled]):hover
+{
+  background-color: color($color-blue, "500");
+}
+
+.md-button.md-raised.add, .md-button.add
+{
+  background-color: color($color-blue, "800");
+  font-weight: bolder;
+  color: white;
+}
+
+.md-default-theme.add:not([disabled]):hover, .md-button.add:not([disabled]):hover
+{
+  background-color: color($color-blue, "600");
+}
