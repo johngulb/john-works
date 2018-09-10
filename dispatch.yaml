@@ -1,0 +1,5 @@
+dispatch:
+
+  # UM screening task
+  - url: "um.john.works/*"
+    service: map-service
