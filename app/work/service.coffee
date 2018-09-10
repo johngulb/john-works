@@ -31,11 +31,11 @@ export default Ember.Service.extend
         title: 'Treasure Chest Foods'
         subtitle: 'High quality meats and seafood dilivered to your door'
         description: 'Since 1985, Treasure Chest Foods has been in the business of delivering the highest quality meats and seafood directly to peoples homes and businesses.'
-    'map-widget':
+    'map-pins':
       component: 'work/widget-view'
       url: 'https://map-service-dot-john-works.appspot.com/'
       details:
-        title: 'Map Widget'
+        title: 'Map Pins Widget'
         subtitle: ''
         description: ''
 
