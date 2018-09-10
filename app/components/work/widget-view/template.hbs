@@ -6,7 +6,5 @@
 {{#if isLoading}}
   {{paper-progress-circular}}
 {{else if work.url}}
-  {{#paper-card as |card|}}
-    <iframe src={{work.url}}></iframe>
-  {{/paper-card}}
+  {{webpage-view url=work.url}}
 {{/if}}

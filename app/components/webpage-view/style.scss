@@ -1,0 +1,9 @@
+.webpage-view {
+  height: 50vh;
+  background-color: white;
+  iframe {
+    height: 100%;
+    min-height: 500px;
+    border: none;
+  }
+}

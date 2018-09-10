@@ -1,25 +1,10 @@
 {{#if work.details}}
-  {{#paper-card as |card|}}
-    {{#card.title as |title|}}
-      {{#title.text as |text|}}
-        {{#text.headline}}{{work.details.title}}{{/text.headline}}
-        {{#text.subhead}}{{work.details.subtitle}}{{/text.subhead}}
-      {{/title.text}}
-    {{/card.title}}
-    {{#card.content}}
-      {{{work.details.description}}}
-    {{/card.content}}
-    {{#card.actions}}
-      {{#paper-button onClick=(action 'open')}}Visit Website{{/paper-button}}
-    {{/card.actions}}
-  {{/paper-card}}
+  {{details-card details=work.details}}
 {{/if}}
 
 <!-- The loading forces the iframe to reload -->
 {{#if isLoading}}
   {{paper-progress-circular}}
 {{else if work.url}}
-  {{#paper-card as |card|}}
-    <iframe src={{work.url}}></iframe>
-  {{/paper-card}}
+  {{webpage-view url=work.url}}
 {{/if}}
