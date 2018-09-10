@@ -45,6 +45,9 @@ module.exports = function(environment) {
 
   if (environment === 'production') {
     // here you can enable a production-specific feature
+    ENV.googleAnalytics = {
+      webPropertyId: 'UA-125478750-1'
+    };
   }
 
   return ENV;
