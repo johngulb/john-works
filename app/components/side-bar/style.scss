@@ -30,6 +30,13 @@
     }
   }
 
+  a.active {
+    .work {
+      cursor: default;
+      background-color: #56a5e4;
+    }
+  }
+
   a {
     width: 100%;
     color: white;
