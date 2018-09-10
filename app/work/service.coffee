@@ -6,7 +6,6 @@ export default Ember.Service.extend
     'www.bestfoodfeed.com':
       component: 'work/embedded-webpage'
       url: 'https://www.bestfoodfeed.com'
-      iframe: true
       details:
         title: 'BestFoodFeed'
         subtitle: 'A community-powered local food guide'
@@ -14,7 +13,6 @@ export default Ember.Service.extend
     'contributors.bestfoodfeed.com':
       component: 'work/embedded-webpage'
       url: 'https://contributors.bestfoodfeed.com'
-      iframe: true
       details:
         title: 'BestFoodFeed Contributor Dashboard'
         subtitle: 'Join us to feed your passion for the best food, community, and experiences.'
@@ -22,7 +20,6 @@ export default Ember.Service.extend
     'partners.bestfoodfeed.com':
       component: 'work/embedded-webpage'
       url: 'https://partners.bestfoodfeed.com'
-      iframe: true
       details:
         title: 'BestFoodFeed Partnerships'
         subtitle: 'Learn more about how to partner with BestFoodFeed'
@@ -30,11 +27,17 @@ export default Ember.Service.extend
     'treasurechestfoods.com':
       component: 'work/embedded-webpage'
       url: 'http://treasure-chest-foods.mf5.me'
-      iframe: true
       details:
         title: 'Treasure Chest Foods'
         subtitle: 'High quality meats and seafood dilivered to your door'
         description: 'Since 1985, Treasure Chest Foods has been in the business of delivering the highest quality meats and seafood directly to peoples homes and businesses.'
+    'map-widget':
+      component: 'work/widget-view'
+      url: 'https://map-service-dot-john-works.appspot.com/'
+      details:
+        title: 'Map Widget'
+        subtitle: ''
+        description: ''
 
   getWork: (unique_id) ->
     @get('works')[unique_id]
