@@ -1,8 +1,8 @@
 import Ember from 'ember'
 
-RequestResume = Ember.Component.extend
+RequestContact = Ember.Component.extend
 
-  classNames: ['request-resume']
+  classNames: ['request-contact']
 
   show: false
   state: 'request'
@@ -31,4 +31,4 @@ RequestResume = Ember.Component.extend
     cancel: ->
       @set 'show', false
 
-export default RequestResume
+export default RequestContact

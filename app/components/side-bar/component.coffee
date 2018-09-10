@@ -6,14 +6,14 @@ SideBar = Ember.Component.extend
   classNameBindings: ['isCompact:compact']
   sidebar: Ember.inject.service()
 
-  isRequestingResume: false
+  isRequesting: false
 
   isCompact: Ember.computed 'sidebar.compact', ->
     @get('sidebar.compact')
 
   actions:
 
-    requestResume: ->
-      @set('isRequestingResume', true)
+    contact: ->
+      @set('isRequesting', true)
 
 export default SideBar

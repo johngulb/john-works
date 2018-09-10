@@ -1,8 +1,8 @@
 {{#if show}}
-  {{#paper-dialog class='request-resume' onClose=(action "cancel")}}
+  {{#paper-dialog class='request-contact' onClose=(action "cancel")}}
 
     {{#paper-dialog-content}}
-      <h2 class="md-title">Request Resume</h2>
+      <h2 class="md-title">Contact</h2>
       <p class='text'>Thank you for your interest. Please leave your name and email address and I will get back to you as soon as possible.</p>
       {{#if (eq state 'request')}}
         {{paper-input label="name" autofocus=true value=name onChange=(action (mut name))}}
@@ -12,7 +12,7 @@
         <div class="loading-box">
           {{paper-progress-circular}}
           <div class="loading-text">
-            Submitting Resume Request...
+            Submitting Request...
           </div>
         </div>
       {{/if}}
