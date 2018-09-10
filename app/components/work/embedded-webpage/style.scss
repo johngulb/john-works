@@ -12,5 +12,11 @@
   }
   md-card {
     margin-bottom: 32px;
+
+    button {
+      &:hover, &:focus {
+        color: #999;
+      }
+    }
   }
 }

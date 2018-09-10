@@ -1,8 +1,3 @@
-{{#if work.url}}
-  {{#paper-card as |card|}}
-    <iframe src={{work.url}}></iframe>
-  {{/paper-card}}
-{{/if}}
 {{#if work.details}}
   {{#paper-card as |card|}}
     {{#card.title as |title|}}
@@ -15,7 +10,16 @@
       {{{work.details.description}}}
     {{/card.content}}
     {{#card.actions}}
-      {{#paper-button}}Visit{{/paper-button}}
+      {{#paper-button onClick=(action 'open')}}Visit{{/paper-button}}
     {{/card.actions}}
+  {{/paper-card}}
+{{/if}}
+
+<!-- The loading forces the iframe to reload -->
+{{#if isLoading}}
+  {{paper-progress-circular}}
+{{else if work.url}}
+  {{#paper-card as |card|}}
+    <iframe src={{work.url}}></iframe>
   {{/paper-card}}
 {{/if}}
