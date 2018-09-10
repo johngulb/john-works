@@ -5,19 +5,18 @@ RequestResume = Ember.Component.extend
   classNames: ['request-resume']
 
   show: false
-  request: null
 
-  didRecieveAttrs: ->
+  name: ''
+  email: ''
+
+  didReceiveAttrs: ->
     @_super()
-    @set('request', {
-      name: ''
-      email: ''
-    })
+    @set 'name', ''
+    @set 'email', ''
 
   actions:
 
     submit: ->
-      console.log(@get('request'))
       @set('show', false)
 
     cancel: ->
