@@ -1,0 +1,12 @@
+{{#if work.details}}
+  {{details-card details=work.details}}
+{{/if}}
+
+<!-- The loading forces the iframe to reload -->
+{{#if isLoading}}
+  {{paper-progress-circular}}
+{{else if work.url}}
+  {{#paper-card as |card|}}
+    <iframe src={{work.url}}></iframe>
+  {{/paper-card}}
+{{/if}}
