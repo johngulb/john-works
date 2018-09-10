@@ -26,14 +26,14 @@ export default Ember.Service.extend
         description: 'BestFoodFeed provides on demand word of mouth, marketing, and photography services to businesses around the world.'
     'treasurechestfoods.com':
       component: 'work/embedded-webpage'
-      url: 'http://treasure-chest-foods.mf5.me'
+      url: 'https://treasure-chest-foods-dot-john-works.appspot.com'
       details:
         title: 'Treasure Chest Foods'
         subtitle: 'High quality meats and seafood dilivered to your door'
         description: 'Since 1985, Treasure Chest Foods has been in the business of delivering the highest quality meats and seafood directly to peoples homes and businesses.'
     'map-pins':
       component: 'work/widget-view'
-      url: 'https://map-service-dot-john-works.appspot.com/'
+      url: 'https://map-service-dot-john-works.appspot.com'
       details:
         title: 'Map Pins Widget'
         subtitle: ''
