@@ -1,0 +1,14 @@
+{{#paper-card as |card|}}
+  {{#card.title as |title|}}
+    {{#title.text as |text|}}
+      {{#text.headline}}{{details.title}}{{/text.headline}}
+      {{#text.subhead}}{{details.subtitle}}{{/text.subhead}}
+    {{/title.text}}
+  {{/card.title}}
+  {{#card.content}}
+    {{{details.description}}}
+  {{/card.content}}
+  {{#card.actions}}
+    {{yield}}
+  {{/card.actions}}
+{{/paper-card}}
