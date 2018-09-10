@@ -1,5 +1,9 @@
 {{#if work.details}}
-  {{details-card details=work.details}}
+  {{#details-card details=work.details}}
+    {{#paper-button onClick=(action 'open')}}
+      Visit Website
+    {{/paper-button}}
+  {{/details-card}}
 {{/if}}
 
 <!-- The loading forces the iframe to reload -->
