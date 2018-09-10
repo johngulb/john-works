@@ -5,6 +5,7 @@ RequestResume = Ember.Component.extend
   classNames: ['request-resume']
 
   show: false
+  state: 'request'
 
   name: ''
   email: ''
@@ -17,9 +18,17 @@ RequestResume = Ember.Component.extend
   actions:
 
     submit: ->
-      @set('show', false)
+      @set 'state', 'requesting'
+      # send request to server
+      # @get('api').post('request-resume', {
+      #   name: @get('name')
+      #   email: @get('email')
+      # }).then =>
+      #   @set 'state', 'requested'
+      # .catch =>
+      #   @set 'state', 'request'
 
     cancel: ->
-      @set('show', false)
+      @set 'show', false
 
 export default RequestResume

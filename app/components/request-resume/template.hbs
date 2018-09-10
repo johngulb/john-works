@@ -3,15 +3,28 @@
 
     {{#paper-dialog-content}}
       <h2 class="md-title">Request Resume</h2>
-      {{paper-input placeholder="name" autofocus=true value=name onChange=(action (mut name))}}
-      {{paper-input placeholder="email" autofocus=true value=email onChange=(action (mut email))}}
+      <p class='text'>Thank you for your interest. Please leave your name and email address and I will get back to you as soon as possible.</p>
+      {{#if (eq state 'request')}}
+        {{paper-input label="name" autofocus=true value=name onChange=(action (mut name))}}
+        {{paper-input label="email" value=email onChange=(action (mut email))}}
+        {{paper-input label="note (optional)" textarea=true value=note onChange=(action (mut note))}}
+      {{else if (eq state 'requesting')}}
+        <div class="loading-box">
+          {{paper-progress-circular}}
+          <div class="loading-text">
+            Submitting Resume Request...
+          </div>
+        </div>
+      {{/if}}
     {{/paper-dialog-content}}
 
-    {{#paper-dialog-actions class="layout-row"}}
-      <span class="flex"></span>
-      {{#paper-button primary=true onClick=(action "cancel")}}Cancel{{/paper-button}}
-      {{#paper-button primary=true onClick=(action "submit")}}Submit{{/paper-button}}
-    {{/paper-dialog-actions}}
+    {{#if (eq state 'request')}}
+      {{#paper-dialog-actions class="layout-row"}}
+        <span class="flex"></span>
+        {{#paper-button onClick=(action "cancel")}}Cancel{{/paper-button}}
+        {{#paper-button primary=true raised=true onClick=(action "submit")}}Submit{{/paper-button}}
+      {{/paper-dialog-actions}}
+    {{/if}}
 
   {{/paper-dialog}}
 {{/if}}

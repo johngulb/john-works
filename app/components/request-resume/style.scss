@@ -1,7 +1,22 @@
 .request-resume {
-
+  .text {
+    line-height: 1.4rem;
+    font-size: 0.9rem;
+  }
+  .loading-box {
+    padding: 1em;
+    padding-bottom: 0;
+    md-progress-circular {
+      margin: auto;
+    }
+    .loading-text {
+      padding: 1em 0;
+      text-align: center;
+      color: #666;
+    }
+  }
 }
 
 md-dialog.request-resume {
-  max-width: 300px;
+  max-width: 350px;
 }
