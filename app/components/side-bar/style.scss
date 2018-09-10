@@ -3,6 +3,8 @@
   box-shadow: 8px 0 8px -10px #000;
   background-color: #2196f3;
   padding: 2rem 0;
+  transition: width 0.5s;
+  transition-timing-function: ease-in-out;
 
   h1, h2, h3, p, div {
     color: white;
@@ -14,7 +16,9 @@
   }
 
   .works {
-
+    margin: auto;
+    max-width: 300px;
+    text-align: center;
   }
 
   section .title {
@@ -24,9 +28,16 @@
     color: #ddd;
   }
 
-  .work {
+  .item.work {
+    border-radius: 5px;
     &:hover {
       background-color: #56a5e4;
+    }
+  }
+
+  &.compact {
+    .item.work {
+      border-radius: 0;
     }
   }
 
@@ -44,6 +55,15 @@
 
   .item {
     padding: 0.6rem 1.3rem;
+  }
+
+  button.request-resume {
+    text-transform: inherit;
+    width: 100%;
+    margin: 1em 0;
+    padding: 12px;
+    color: #fafafa;
+    margin-top: 32px;
   }
 
 }

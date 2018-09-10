@@ -47,4 +47,10 @@
     {{/link-to}}
   </section> -->
 
+  {{#paper-button class='request-resume' onClick=(action 'requestResume')}}
+    Request Resume
+  {{/paper-button}}
+
 </div>
+
+{{request-resume show=isRequestingResume}}

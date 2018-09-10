@@ -1,9 +1,12 @@
 .application-page {
   .side-bar {
-    width: 300px;
     height: 100vh;
+    width: 100%;
     position: absolute;
     z-index: 10;
+    &.compact {
+      width: 300px;
+    }
   }
   .application-outlet {
     margin-left: 300px;
