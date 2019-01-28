@@ -1,8 +1,12 @@
 dispatch:
 
-  # UM screening task
+  # Main site
   - url: "john.works/*"
     service: default
+
+  # Blog
+  - url: "blog.john.works/*"
+    service: blog-server
 
   # UM screening task
   - url: "um.john.works/*"
