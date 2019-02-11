@@ -15,3 +15,5 @@ dispatch:
   # Treasure Chest Foods
   - url: "www.treasurechestfoods.com/*"
     service: treasure-chest-foods-website
+  - url: "treasurechestfoods.com/*"
+    service: treasure-chest-foods-website
