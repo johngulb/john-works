@@ -11,3 +11,7 @@ dispatch:
   # UM screening task
   - url: "um.john.works/*"
     service: map-service
+
+  # Treasure Chest Foods
+  - url: "www.treasurechestfoods.com/*"
+    service: treasure-chest-foods-website
